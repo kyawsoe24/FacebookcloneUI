@@ -1,0 +1,626 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root{
+    --primary: #3578E5;
+    --black: #18191a;
+    --sime-black: #242526;
+    --soft-black: #3a3b3c;
+    --red:#f02849;
+    --Green: #44b960;
+    --yellow: #dda728;
+    --text: #b7b9bd;
+    --text-light:#ffffff;
+    --text-soft:#535353;
+
+}
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    color: var(--text);
+}
+
+body{
+    background-color: var(--black);
+}
+
+.nav{
+    background-color: var(--sime-black);
+    height: 60px;
+    display: flex;
+}
+/* -------Left-------------- */
+.left{
+    width: 25%;
+}
+
+.left-box{
+    display: flex;
+    padding: 10px;
+}
+
+.logo{
+    width: 40px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.search-box{
+    background-color: var(--soft-black);
+    border-radius: 110px;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+}
+
+.search-box i{
+    margin-right: 10px;
+}
+
+.search-input{
+    color: var(--text);
+    background-color: var(--soft-black);
+    border: none;
+    width: 100%;
+}
+
+.search-input:focus{
+    outline: none;
+}
+
+/* -------------Center-------------- */
+.center{
+    width: 50%;
+}
+
+.center-box{
+    display: flex;
+    justify-content: center;
+}
+
+.center-home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 110px;
+    height: 40px;
+    margin: 0 5px;
+    border-top: 5px solid var(--sime-black);
+    border-bottom: 5px solid var(--sime-black);
+    padding:  5px 10px;
+    position: relative;
+    transition: 0.5s;
+}   
+
+.center-home:hover{
+    background-color: var(--soft-black);
+    border-radius: 15px;
+}
+
+.center-home.active:hover{
+    background-color: var(--sime-black);
+    border-radius:0;
+    cursor: pointer;
+}
+
+
+.center-home.active{
+    border-bottom-color: var(--primary) ;
+}
+.center-home.active .center-icon{
+    color: var(--primary) !important;
+}
+
+/* .center-home .user-border{
+    width: 50px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--soft-black);
+    border-radius: 10px;
+    margin: 10px 5px;
+} */
+
+.center-icon{
+    font-size: 30px;
+}
+
+
+
+.center-home .notification{
+    background-color: var(--red);
+    padding: 1px 5px;
+    border-radius: 10px;
+    font-size: 12px;
+    position: absolute;
+    top: 10px;
+    right: 30px;
+    font-weight: 600;
+    color: var(--text-light);
+}
+
+
+/* ---------------Right------------- */
+.right{
+    width: 25%;
+}
+
+.right-box{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.profile{
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+    margin: 10px;
+    padding: 5px 10px;
+    border-radius: 15px;
+    transition: 0.5s;
+}
+.profile:hover{
+    background-color: var(--soft-black);
+    cursor: pointer;
+    
+}
+
+.user-name{
+    color: var(--text);
+    font-weight: 600;
+
+}
+
+.right-notification-box{
+    display: flex;
+    justify-content: center;
+    align-items: center
+
+}
+
+.right-notification{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--soft-black);
+    border-radius: 50%;
+    margin: 10px 5px;
+    transition:0.5s ;
+    
+}
+
+.right-notification:hover{
+    background-color: var(--text-soft);
+    border-radius:50%;
+    cursor: pointer;
+}
+
+/* -------------Fb-Body--------------- */
+
+.fb-body{
+    display: flex;
+}
+
+.col{ 
+    height: 100vh;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+/* -------------------Body-Left------------------- */
+.one{
+    width: 25%;
+}
+
+.side-left div{
+   display: flex;
+    
+}
+.side-left :hover{
+    background-color: var(--soft-black);
+    border-radius: 15px;
+    cursor: pointer;
+}
+.left-profile{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+.left-name{
+    align-items: center;
+    display: flex;
+    font-weight: bolder;
+    margin-top: 10px;
+}
+
+.see-more-btn{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin: 10px;
+    background-color: var(--soft-black);
+}
+
+.hr{
+    border: 1px solid var(--soft-black);
+    margin: 10px;
+}
+
+.shortcuts{
+    padding: 10px;
+}
+
+.edit{
+    padding-left: 145px;
+    color: var(--primary);
+    cursor: pointer;
+}
+
+
+.footer-bar{
+    padding: 10px;
+}
+
+.footer-bar a{
+    font-size: 12px;
+}
+
+.footer-bar i{
+    font-size: 3px;
+}
+
+.footer-bar .fa-play{
+    font-size: 12px;
+}
+
+
+/* ---------------Body-Center----------------- */
+.two{
+    width: 50%;
+}
+
+.two::-webkit-scrollbar {
+    display: none;
+  }
+
+.my-day-list{
+    margin-top: 20px;
+    display: flex;
+    /* overflow-y: scroll; */
+    /* position: absolute; */
+    width: 100%;
+    justify-content: space-between;
+}
+
+.my-day-item{
+    width: 100px;
+}
+
+.my-day{
+    width: 100px;
+    height: 160px;
+    overflow: hidden;
+    background-size: 100%;
+    background-position: center;
+    border-radius: 20px;
+    padding: 10px;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+}
+    
+.scroll-my-day {
+    width: 50px;
+    height: 50px;
+    background-color: var(--sime-black);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 300px;
+    top: 155px;
+}
+
+.my-day-owner{
+    width: 40px;
+    height: 40px;
+    background: var(--primary);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.my-day-owner .fa-plus{
+    width: 40px;
+    height: 40px;
+    background: var(--soft-black);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.my-day-owner-img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-size: 100% ;
+    background-position: center;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.my-day-owner-img:hover{
+    background-color: transparent;
+    border-radius:50%;
+    cursor: pointer;
+
+}
+
+.my-day-text{
+    bottom: 10px;
+    color: var(--text-light);
+    font-weight: 500;
+}
+
+.my-day-image{
+    width: 100%;
+}
+
+.add-post{
+    margin: 20px 50px;
+    background-color: var(--sime-black);
+    border-radius: 20px;
+    padding: 10px 20px;
+}
+
+/* .add-post-box{
+
+} */
+
+.add-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.profile-photo{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.add-text-box{
+    background-color: var(--soft-black);
+    border-radius: 110px;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.divider{
+    height: 1px;
+    background-color: var(--soft-black);
+    margin: 10px 0;
+}
+
+
+.add-file{
+    display: flex;
+    justify-content: space-between;
+}
+
+.add-file div{
+    flex-grow: 1;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.add-file div:hover{
+    background-color: var(--soft-black);
+    cursor: pointer;
+}
+
+.add-file .video i{
+    color: var(--Green);
+    margin: 5px;
+
+}
+
+.add-file .photo i{
+    color: var(--red);
+    margin: 5px;
+   
+}
+
+.add-file .emoji i{
+    color: var(--yellow);
+    margin: 5px;
+}
+
+/* .post-list{
+    
+} */
+
+.post-list-box{
+    /* display: block;
+    background-color: var(--soft-black); */
+    border-radius: 10px;
+    padding: 10px 15px;
+    margin: 20px 50px;
+}
+
+.states-container{
+    display: block;
+    background-color: var(--soft-black);
+    border-radius: 10px;
+    padding: 10px 15px;
+    /* margin: 20px 50px; */
+}
+
+.states-nav{
+    display: flex;
+}
+
+.states-nav-2{
+    display: block;
+    padding: 0px 0px 10px 40px;
+    line-height: 1.2308;
+}
+
+.states-hour{
+    font-size: .8125rem;
+    
+}
+
+.states-nav-2 .fa-circle{
+    font-size: 3px;
+}
+
+.states-nav-2 .fa-globe-asia{
+    font-size: .8125rem;
+}
+
+/* .profile-name{
+
+
+} */
+
+/* .states {
+   
+} */
+
+p.states-text-box{
+    font-size: small;
+    text-align: justify;
+    line-height: 1.3333;
+    word-break: break-all;
+
+}
+
+.status-img{
+    width: 100%;
+    height: 100%;
+    border: 0;
+    cursor: pointer;
+    padding-top: 10px;
+}
+
+/* .emoji-btn{
+    display: flex;
+} */
+
+.fa-surprise{
+    color: var(--yellow);
+}
+
+.fa-heart{
+    color: var(--red);
+}
+
+.fa-thumbs-up{
+    color: var(--primary);
+    padding-right: 5px;
+}::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #535353; 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555555; 
+  }
+.like{
+    margin-right: 200px;
+}
+
+/* .comment .share {
+    margin-right: 30px;
+} */
+
+/* --------------Body-Right--------------- */
+.three{
+    width: 25%;
+}
+
+.chat-box{
+    margin: 5px 0px 5px 22px;
+}
+
+.right-btn{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.comfirm-btn{
+    background-color: var(--primary);
+    margin-right: 20px;
+    border-radius: 10px;
+    height: 37px;
+    justify-content: center;
+    align-items: center;
+    width: 105px;
+}
+.delete-btn{
+    background-color: var(--soft-black);
+    margin-right: 20px;
+    border-radius: 10px;
+    height: 37px;
+    justify-content: center;
+    align-items: center;
+    width: 105px;
+}
+
+.edit-see-all{
+        padding-left: 85px;
+        color: var(--primary);
+        cursor: pointer;
+    }
+
+
+.contant-bar{
+    display: flex;
+}
+.text{
+    padding-right: 85px;
+}
+
+.icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+}
+
+.icon-right{
+    padding-right: 24px;
+}
+.icon-right :hover{
+    background-color: var(--text-soft);
+    border-radius: 50%;
+    cursor: pointer; 
+}
